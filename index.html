@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/Css/style.css">
+    
+    <link rel="stylesheet" href="/Css/sweetalert2.min.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <main class="main-content container">
+
+        <div class="booking-content">
+            <h1>Mega City Bus</h1>
+            <p>Mega City Bus operates a comprehensive network of services in the city, as well as express coach services to the airports. We also operate the BROOKES bus service in partnership with Oxford Brookes University, and the popular park&ride service which connects five car parks to the city centre.</p>
+        </div>
+
+
+        <div class="booking-form">
+            <h3>Explore By Bus</h3>
+
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhaka">
+                </div>
+                <div class="input-group">
+                    <label" for="">From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Chittagone">
+                </div>
+            </div>
+
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Departure</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input  class="inp-style" type="date" name="">
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input-group f-class">
+                <div>
+                    <label for="">First Class ($150)</label>
+                    <input id="firstClass-count" class="inp-style inp-width" type="number" name="" value="0">
+                </div>
+                <div class="plus-minus-btn">
+                    <button onclick="bookingItemChange('firstClass' ,false )" class="booking-btn">-</button>
+                    <p></p>
+                    <button onclick="bookingItemChange('firstClass' , true)" class="booking-btn">+</button>
+                </div>
+            </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <button onclick="bookingItemChange('economy' ,false)" class="booking-btn">-</button>
+                        <p></p>
+                        <button onclick="bookingItemChange('economy' ,true)" class="booking-btn">+</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p id="subtotal">0</p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p id="tax">0</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p id="grand-total">0</p>
+                    </div>
+                </div>
+            </div>
+            <button id="login-id" class="btn-style">Book Now</button>
+        </div>
+    </main>
+    <script src="/Java-script/index.js"></script>
+    <script src="/Java-script/sweetalert2.min.js"></script>
+    
+    <!--Thank You-->
+</body>
+
+</html>
